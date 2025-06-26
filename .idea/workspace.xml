@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac7ef290-ba73-4d9c-b9fc-00773c52331b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,8 +47,11 @@
     "Docker.patient-service-db.executor": "Run",
     "Docker.patient-service.executor": "Run",
     "HTTP Request.create-billing-account | #1.executor": "Run",
+    "HTTP Request.create-patient | Creates a new patient entity.executor": "Run",
     "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
     "Maven.billing-service [compile].executor": "Run",
+    "Maven.patient-service [clean].executor": "Run",
+    "Maven.patient-service [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -59,6 +62,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/desktop files/my projects/springboot/patient management system/patient-service/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,8 +77,16 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.billing-service">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\desktop files\my projects\springboot\patient management system\patient-service\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.patient-service">
     <configuration name="create-billing-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="create-patient | Creates a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" requestIdentifier="Creates a new patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
@@ -187,6 +199,14 @@
                 <option name="name" value="SPRING_SQL_INIT_MODE" />
                 <option name="value" value="always" />
               </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="BILLING_SERVICE_ADDRESS" />
+                <option name="value" value="billing-service" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="BILLING_SERVICE_GRPC_PORT" />
+                <option name="value" value="9001" />
+              </DockerEnvVarImpl>
             </list>
           </option>
           <option name="portBindings">
@@ -207,6 +227,7 @@
       <item itemvalue="Docker.patient-service" />
       <item itemvalue="Docker.billing-service" />
       <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="HTTP Request.create-patient | Creates a new patient entity" />
       <item itemvalue="HTTP Request.create-billing-account | #1" />
       <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       <item itemvalue="Spring Boot.BillingServiceApplication" />
@@ -214,6 +235,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.create-patient | Creates a new patient entity" />
         <item itemvalue="HTTP Request.create-billing-account | #1" />
         <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
       </list>
@@ -236,7 +258,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750917675321</updated>
       <workItem from="1750917676998" duration="249000" />
-      <workItem from="1750917954750" duration="3718000" />
+      <workItem from="1750917954750" duration="6816000" />
     </task>
     <servers />
   </component>
