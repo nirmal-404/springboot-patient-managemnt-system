@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+// its going to split our service request and response files all into different files.
+// By default the code generation will put everything in the same files
+option java_multiple_files = true;
+
+// code generation puts all of our codes in this package
+option java_package = "billing";
+
+// Service and the the methods exists in the service
+service BillingService {
+  rpc CreateBillingAccount (BillingRequest) returns (BillingResponse);
+}
+
+message BillingRequest {
+  string patientId = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message BillingResponse {
+  string accountId = 1;
+  string status = 2;
+}

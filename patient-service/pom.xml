@@ -52,14 +52,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Lombok (with version!) -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.32</version>
-			<scope>provided</scope>
-		</dependency>
-
 		<!-- Devtools -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
