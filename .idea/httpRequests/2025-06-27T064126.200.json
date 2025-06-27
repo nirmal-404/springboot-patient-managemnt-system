@@ -1,0 +1,7 @@
+{
+  "id": "98c6c80d-7f1a-49a7-9b37-6dcb3a5b514f",
+  "name": "John Doe kafka test",
+  "email": "testkafka@example.com",
+  "address": "123 main street",
+  "dateOfBirth": "1995-09-09"
+}
