@@ -2,4 +2,8 @@
 GET http://localhost:4000/patients
     ?generated-in=IntelliJ IDEA
 
+### GET request to get all patients(via api gateway)
+GET http://localhost:4004/api/patients
+    ?generated-in=IntelliJ IDEA
+
 ###
