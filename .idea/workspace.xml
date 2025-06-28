@@ -5,12 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac7ef290-ba73-4d9c-b9fc-00773c52331b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/auth-service/login.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/auth-service/validate.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/dto/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/dto/LoginResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d45074a0-c7a9-4d2f-b12d-4f77b1d33554.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d45074a0-c7a9-4d2f-b12d-4f77b1d33554.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +39,7 @@
       <list>
         <option value="Dockerfile" />
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -48,6 +66,8 @@
   "keyToString": {
     "Docker.analytics-service.executor": "Run",
     "Docker.api-gateway.executor": "Run",
+    "Docker.auth-service-db.executor": "Run",
+    "Docker.auth-service.executor": "Run",
     "Docker.billing-service.executor": "Run",
     "Docker.kafka .executor": "Run",
     "Docker.patient-service-db.executor": "Run",
@@ -55,6 +75,8 @@
     "HTTP Request.create-billing-account | #1.executor": "Run",
     "HTTP Request.create-patient | Creates a new patient entity.executor": "Run",
     "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
+    "HTTP Request.login | Login Request to retrieve a token.executor": "Run",
+    "HTTP Request.validate | GET request to example server.executor": "Run",
     "Maven.analytics-service [clean].executor": "Run",
     "Maven.analytics-service [compile].executor": "Run",
     "Maven.billing-service [compile].executor": "Run",
@@ -65,17 +87,22 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BillingServiceApplication.executor": "Run",
     "Spring Boot.PatientServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "22",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/desktop files/my projects/springboot/patient management system/api-gateway",
+    "last_opened_file_path": "D:/desktop files/my projects/springboot/patient management system/auth-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -88,6 +115,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\desktop files\my projects\springboot\patient management system\auth-service" />
       <recent name="D:\desktop files\my projects\springboot\patient management system\api-gateway" />
       <recent name="D:\desktop files\my projects\springboot\patient management system\analytics-service" />
       <recent name="D:\desktop files\my projects\springboot\patient management system\patient-service\src\main" />
@@ -103,7 +131,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.api-gateway">
+  <component name="RunManager" selected="Docker.auth-service">
     <configuration name="create-billing-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -111,6 +139,12 @@
       <method v="2" />
     </configuration>
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="login | Login Request to retrieve a token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/auth-service/login.http" requestIdentifier="Login Request to retrieve a token" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="validate | GET request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/auth-service/validate.http" requestIdentifier="GET request to example server" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -123,6 +157,13 @@
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.authservice.AuthServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,6 +225,99 @@
           </option>
           <option name="commandLineOptions" value="--network internal" />
           <option name="sourceFilePath" value="api-gateway/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="auth-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres:15" />
+          <option name="containerName" value="auth-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="5001" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="E:\Docker\volumes\auth-service-db" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="auth-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="auth-service:latest" />
+          <option name="containerName" value="auth-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="JWT_SECRET" />
+                <option name="value" value="EQUkFhH43I9RAjy4nYkLs4G4kcQwB/pGdKxveUt7ZvY=" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://auth-service-db:5432/db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="TXlTdXBlclNlY3JldEtleTEyMzQ1Njc4OTA" />
+                <option name="value" value="" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4005" />
+                <option name="hostPort" value="4005" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="auth-service/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
@@ -359,11 +493,16 @@
       <item itemvalue="Docker.kafka " />
       <item itemvalue="Docker.analytics-service" />
       <item itemvalue="Docker.api-gateway" />
+      <item itemvalue="Docker.auth-service" />
       <item itemvalue="Docker.billing-service" />
       <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="Docker.auth-service-db" />
+      <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
+      <item itemvalue="HTTP Request.validate | GET request to example server" />
       <item itemvalue="HTTP Request.create-patient | Creates a new patient entity" />
       <item itemvalue="HTTP Request.create-billing-account | #1" />
       <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
       <item itemvalue="Spring Boot.BillingServiceApplication" />
@@ -371,6 +510,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.validate | GET request to example server" />
+        <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
         <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
         <item itemvalue="HTTP Request.create-patient | Creates a new patient entity" />
         <item itemvalue="HTTP Request.create-billing-account | #1" />
@@ -394,7 +535,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750917675321</updated>
       <workItem from="1750917676998" duration="249000" />
-      <workItem from="1750917954750" duration="22063000" />
+      <workItem from="1750917954750" duration="35758000" />
     </task>
     <servers />
   </component>
