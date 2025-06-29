@@ -4,6 +4,6 @@ GET http://localhost:4000/patients
 
 ### GET request to get all patients(via api gateway)
 GET http://localhost:4004/api/patients
-    ?generated-in=IntelliJ IDEA
+Authorization: Bearer {{token}}
 
 ###
